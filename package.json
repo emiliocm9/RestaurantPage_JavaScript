@@ -1,0 +1,23 @@
+{
+  "name": "restaurantpage_javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emiliocm9/RestaurantPage_JavaScript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emiliocm9/RestaurantPage_JavaScript/issues"
+  },
+  "homepage": "https://github.com/emiliocm9/RestaurantPage_JavaScript#readme",
+  "devDependencies": {
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
+}
