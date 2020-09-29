@@ -4,7 +4,7 @@ export const about = document.querySelector('#container-about');
 
 export const headContent = (body) => {
   const content = document.createElement('div');
-  content.className = 'flex align-center flex-column'
+  content.className = 'flex align-center flex-column';
 
   content.innerHTML = `
     <div class="header_title-cont">
@@ -19,7 +19,7 @@ export const headContent = (body) => {
 
 export const aboutContent = (body) => {
   const content = document.createElement('div');
-  content.className = 'flex'
+  content.className = 'flex';
 
   content.innerHTML = `
   <div class="text flex align-center justify-center flex-column">
@@ -38,4 +38,4 @@ export const aboutContent = (body) => {
   </div>`;
 
   body.appendChild(content);
-}
+};

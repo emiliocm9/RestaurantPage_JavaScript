@@ -12,8 +12,8 @@ export const menuAboutContent = (body) => {
   content.appendChild(products);
   products.innerHTML = '';
 
-  for (let i = 0; i < images.length; i++) {
-    if (images[i] ) {
+  for (let i = 0; i < images.length; i += 1) {
+    if (images[i]) {
       products.innerHTML += `
       <div class="products">
         <a class="product" href="#">
@@ -40,7 +40,7 @@ export const menuAboutContent = (body) => {
 
 export const menuHeadContent = (body) => {
   const content = document.createElement('div');
-  content.className = 'flex align-center flex-column'
+  content.className = 'flex align-center flex-column';
 
   content.innerHTML = `
     <div class="header_title-cont">

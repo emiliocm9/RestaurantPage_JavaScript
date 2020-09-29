@@ -1,4 +1,6 @@
-import { header, about, headContent, aboutContent } from './home';
+import {
+  header, about, headContent, aboutContent 
+  } from './home';
 import { menuHeadContent, menuAboutContent } from './menu';
 import { reserveAboutContent, reserveHeadContent } from './reserve';
 
