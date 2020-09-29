@@ -27,7 +27,6 @@ export const aboutContent = (body) => {
     <h3 class="font-three">Our Story</h3>
     <div><i class="fas fa-asterisk"></i></div>
     <p class="font-one">Gourmet is a restaurant, bar and coffee roastery. Our centerpiece is the tasting menu: rotating, cutting-edge, and traditional all at once. Check out the pepper stuffed with dark chocolate and crunchy cacao, sure to command your attention.</p>
-    <div><a class="a-CTA font-three" href="#">About Us</a></div>
   </div>
   <div class="image-container flex">
     <div class="image image1">

@@ -21,6 +21,10 @@ html {
   display: flex;
 }
 
+.flex-one {
+  flex: 1;
+}
+
 .align-center {
   align-items: center;
 }
@@ -73,6 +77,10 @@ html {
   justify-content: center;
 }
 
+.over-hidden {
+  overflow: hidden;
+}
+
 /*------------------------------------ Nav Section ----------------------------------*/
 nav {
   padding: 3rem 13rem;
@@ -87,6 +95,12 @@ nav {
 .nav_list-link {
   margin: 0 2rem;
   list-style: none;
+  cursor: pointer;
+  padding: 1rem 2rem;
+}
+
+.nav_list-link:hover {
+  border: 2px solid white;
 }
 
 /*------------------------------- Header Section -------------------------------------*/
