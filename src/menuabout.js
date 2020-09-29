@@ -17,15 +17,15 @@ const menuAboutContent = (body) => {
       products.innerHTML += `
       <div class="products">
         <a class="product" href="#">
-          <span class="product__content">
-            <span class="product__thumb">
-              <img src="${images[i]}"/>
+          <span class="product__content display-block">
+            <span class="product__thumb position-absolute display-block">
+              <img class="position-absolute display-block" src="${images[i]}"/>
             </span>
-            <span class="product__info">
-              <span class="product__title">
+            <span class="product__info position-absolute">
+              <span class="product__title display-block">
                 <span>Tacos Gourmet</span>
               </span>
-              <span class="product__price">
+              <span class="product__price display-block">
                 <span>$1200</span>
               </span>
             </span>
