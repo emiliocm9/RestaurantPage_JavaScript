@@ -1,8 +1,11 @@
 import {
-  header, about, headContent, aboutContent,
+  header, about, headContent,
 } from './home';
-import { menuHeadContent, menuAboutContent } from './menu';
-import { reserveAboutContent, reserveHeadContent } from './reserve';
+import aboutContent from './homeabout';
+import menuAboutContent from './menuabout';
+import reserveAboutContent from './reserveabout';
+import menuHeadContent from './menu';
+import reserveHeadContent from './reserve';
 
 const homeButton = document.querySelector('#home');
 const menuButton = document.querySelector('#menu');
