@@ -1,5 +1,5 @@
 import { header, about, headContent, aboutContent } from './home';
-import { menuHeadContent } from './menu.js';
+import { menuHeadContent, menuAboutContent } from './menu.js';
 import { reserveHeadContent } from './reserve';
 const homeButton = document.querySelector('#home');
 const menuButton = document.querySelector('#menu');
@@ -19,6 +19,7 @@ homeButton.addEventListener('click', () => {
 menuButton.addEventListener('click', () => {
   removeContent(header, about)
   menuHeadContent(header);
+  menuAboutContent(about);
 });
 
 reserButton.addEventListener('click', () => {
