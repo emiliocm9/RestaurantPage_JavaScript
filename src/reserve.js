@@ -1,6 +1,6 @@
 export const reserveAboutContent = (body) => {
   const content = document.createElement('div');
-  content.className = 'flex w-100 over-hidden'
+  content.className = 'flex w-100 over-hidden';
 
   content.innerHTML = `
   <div class="text flex align-center justify-center flex-column">
@@ -25,7 +25,7 @@ export const reserveAboutContent = (body) => {
 
 export const reserveHeadContent = (body) => {
   const content = document.createElement('div');
-  content.className = 'flex align-center flex-column'
+  content.className = 'flex align-center flex-column';
 
   content.innerHTML = `
     <div class="header_title-cont">
