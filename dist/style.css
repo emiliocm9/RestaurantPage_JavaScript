@@ -1,0 +1,318 @@
+body {
+  margin: 0;
+  padding: 3.2rem 0 0 0;
+  font-family: 'Oranienbaum', serif;
+  min-width: 318px;
+  font-size: 1.4rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
+/*--------------------------------- DRY Code Tools --------------------------------*/
+.flex {
+  display: flex;
+}
+
+.flex-one {
+  flex: 1;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.list-none {
+  list-style: none;
+}
+
+.font-one {
+  font-family: 'Cabin', sans-serif;
+}
+
+.font-two {
+  font-family: 'Herr Von Muellerhoff', cursive;
+}
+
+.font-three {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.text-white {
+  color: white;
+}
+
+.background-white {
+  background-color: white;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.display-block {
+  display: block;
+}
+
+.over-hidden {
+  overflow: hidden;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+/*------------------------------------ Nav Section ----------------------------------*/
+nav {
+  padding: 3rem 13rem;
+  position: fixed;
+}
+
+.logo_text {
+  border-bottom: 2px solid white;
+  font-size: 3rem;
+}
+
+.nav_list-link {
+  margin: 0 2rem;
+  list-style: none;
+  cursor: pointer;
+  padding: 1rem 2rem;
+}
+
+.nav_list-link:hover {
+  border: 2px solid white;
+}
+
+/*------------------------------- Header Section -------------------------------------*/
+header {
+  height: 100vh;
+  width: 95%;
+  background-image: url(https://images.unsplash.com/photo-1447078806655-40579c2520d6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header_title-cont {
+  margin-bottom: 1.5rem;
+}
+
+.header_title-cont h1 {
+  font-size: 10rem;
+  border-bottom: 2px solid white;
+}
+
+.header_text-cont span {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+/*Start About-Us*/
+.about-us, .reservation {
+  padding: 60px;
+}
+
+.about-us .text, .reservation .text {
+  flex: 50%;
+  padding: 40px 52px 0 0;
+}
+
+.about-us .text h3, .reservation .text h3 {
+  color: #000;
+}
+
+.about-us .text .fa-asterisk, .reservation .text .fa-asterisk {
+  color: #9a9998;
+}
+
+.about-us .image-container, .reservation .image-container {
+  flex: 50%;
+}
+
+.about-us .image, .reservation .image {
+  margin-left: 20px;
+}
+
+.text h2 {
+  font-size: 5rem;
+  color: turquoise;
+  font-weight: normal;
+}
+
+.text p {
+  margin: 1rem 0;
+}
+
+/*----- Menu Products ------*/
+.wrapper {
+  width: 100%;
+  margin: 2em auto;
+}
+.wrapper:after {
+  content: '';
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.products {
+  position: relative;
+  padding: 0 0.5em;
+}
+
+.product {
+  float: left;
+  border-right: 0.5em solid transparent;
+  border-left: 0.5em solid transparent;
+  border-bottom: 2em solid transparent;
+  color: #666;
+  text-decoration: none;
+  width: 9%;
+}
+@media screen and (max-width: 1900px) {
+  .product {
+    width: 12.5%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .product {
+    width: 16.2%;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .product {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .product {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .product {
+    width: 33.333%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .product {
+    width: 50%;
+  }
+  .product .product__title {
+    font-size: .8em;
+  }
+}
+@media screen and (max-width: 310px) {
+  .product {
+    width: 100%;
+  }
+}
+
+.product__content {
+  padding: 134% 0 0 0;
+  position: relative;
+}
+
+.product__thumb {
+  padding: 75% 0 0 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.product__thumb img {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 0;
+}
+
+.product__info {
+  bottom: .5em;
+  width: 100%;
+  font-size: .9em;
+  padding: 0 .5em;
+}
+
+.product__title {
+  text-align: center;
+}
+
+.product__price {
+  text-align: center;
+  margin-top: .3em;
+  color: #000;
+}
+
+/*------------- Footer Section ------------*/
+.copyright {
+  padding: 15px 40px 30px;
+  background-color: #262526;
+}
+
+.copyright .svg-up {
+  top: 0;
+  left: 50%;
+  margin-left: -96px;
+  margin-top: -50px;
+}
+
+.copyright .arrow-up {
+  width: 40px;
+  height: 30px;
+  top: -45px;
+  color: #fff;
+  line-height: 1.9
+}
+
+.copyright ul {
+  justify-content: center;
+}
+
+.copyright li {
+  font-size: 14px;
+}
+
+.copyright li:not(:last-of-type):after {
+  content: '•';
+  margin: 10px;
+}
+
+.copyright .CTA {
+  margin-top: 25px;
+}
