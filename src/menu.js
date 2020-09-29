@@ -12,8 +12,8 @@ export const menuAboutContent = (body) => {
   content.appendChild(products);
   products.innerHTML = '';
 
-  for (const i = 0; i < images.length; i++) {
-    if (images[i]) {
+  for (let i = 0; i < images.length; i++) {
+    if (images[i] ) {
       products.innerHTML += `
       <div class="products">
         <a class="product" href="#">
