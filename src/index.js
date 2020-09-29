@@ -1,65 +1,27 @@
-const navbar = document.querySelector('#container-nav');
-const header = document.querySelector('#container-header');
-const about = document.querySelector('#container-about');
+import { header, about, headContent, aboutContent } from './home';
+import { menuHeadContent } from './menu.js';
+import { reserveHeadContent } from './reserve';
+const homeButton = document.querySelector('#home');
+const menuButton = document.querySelector('#menu');
+const reserButton = document.querySelector('#reservation');
 
-const navContent = (body) => {
-  const content = document.createElement('div');
-  content.className = 'flex w-100 align-center justify-between'  
-
-  content.innerHTML = `
-    <div class="logo_container-gen">
-      <h1 class="logo_text text-white font-two normal">Gourmet</h1>
-    </div>
-    <div class="links_container-gen">
-      <ul class="nav_list flex align-center">
-        <li class="nav_list-link text-white font-three">Home</li>
-        <li class="nav_list-link text-white font-three">Menu</li>
-        <li class="nav_list-link text-white font-three">Resarvations</li>
-      </ul>
-    <div>`;
-
-  body.appendChild(content);
-}
-
-const headContent = (body) => {
-  const content = document.createElement('div');
-  content.className = 'flex align-center flex-column'
-
-  content.innerHTML = `
-    <div class="header_title-cont">
-      <h1 class="text-white font-two normal">Gourmet</h1>
-    </div>
-    <div class="header_text-cont">
-      <span class="text-white">Ready to be opened</span>
-    </div>`;
-
-  body.appendChild(content);
+const removeContent = (header, about) => {
+  header.innerHTML = '';
+  about.innerHTML = '';
 };
 
-const aboutContent = (body) => {
-  const content = document.createElement('div');
-  content.className = 'flex'
+homeButton.addEventListener('click', () => {
+  removeContent(header, about)
+  headContent(header);
+  aboutContent(about);
+});
 
-  content.innerHTML = `
-  <div class="text flex align-center justify-center flex-column">
-    <h2 class="font-two">Discover</h2>
-    <h3 class="font-three">Our Story</h3>
-    <div><i class="fas fa-asterisk"></i></div>
-    <p class="font-one">Gourmet is a restaurant, bar and coffee roastery. Our centerpiece is the tasting menu: rotating, cutting-edge, and traditional all at once. Check out the pepper stuffed with dark chocolate and crunchy cacao, sure to command your attention.</p>
-    <div><a class="a-CTA font-three" href="#">About Us</a></div>
-  </div>
-  <div class="image-container flex">
-    <div class="image image1">
-        <img src="https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988527/vertical-photo-1.jpg" alt="Food Photo">
-    </div>
-    <div class="image image2">
-        <img src="https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988532/vertical-photo-2.jpg" alt="Food Photo">
-    </div>
-  </div>`;
+menuButton.addEventListener('click', () => {
+  removeContent(header, about)
+  menuHeadContent(header);
+});
 
-  body.appendChild(content);
-}
-
-navContent(navbar);
-headContent(header);
-aboutContent(about);
+reserButton.addEventListener('click', () => {
+  removeContent(header, about)
+  reserveHeadContent(header);
+});
