@@ -4,7 +4,7 @@ This is a restaurant page built using Webpack and JavaScript ES6. The website co
 
 > This repo includes the code for the JavaScript Restaurant Page. User could download the code and use it to generate a new web page with new properties as the user could want.
 
-![Index](./assets/images/Index.png)
+![Index](https://github.com/emiliocm9/RestaurantPage_JavaScript/blob/page-layout/assets/images/Index.PNG)
 
 ## Built With
 
